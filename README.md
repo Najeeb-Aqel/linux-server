@@ -11,17 +11,18 @@ The site need to be opened at http://localhost:5000/
 # Installation 
 
 
-1/2. start a new ubuntu linux server and ssh into your server:
-      * [creating your server with amazon lightsail](https://aws.amazon.com/getting-started/tutorials/launch-a-virtual-                          machine/?trk=gs_card).
+1. start a new ubuntu linux server and ssh into your server:
+
+      * [creating your server on lightsail](https://aws.amazon.com/getting-started/tutorials/launch-a-virtual-machine/?trk=gs_card)
       
-      * ssh into your server: ` ssh -i ~/.ssh/project_key.rsa ubuntu@Public IP address `
+      * ssh into your server: `ssh -i ~/.ssh/project_key.rsa ubuntu@Public IP address `
       
 
-3. Update all currently installed packages: 
+2. Update all currently installed packages: 
       * `sudo apt-get update`
       * `sudo apt-get upgrade`
 
-4.  Change the SSH port from 22 to 2200:
+3.  Change the SSH port from 22 to 2200:
       * 
 
 
