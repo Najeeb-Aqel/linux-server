@@ -12,7 +12,8 @@ The site need to be opened at http://localhost:5000/
 
 
 1/2. start a new ubuntu linux server and ssh into your server:
-      * [creating your server with amazon lightsail](https://aws.amazon.com/getting-started/tutorials/launch-a-virtual-machine/?trk=gs_card)
+      * [creating your server with amazon lightsail](https://aws.amazon.com/getting-started/tutorials/launch-a-virtual-                          machine/?trk=gs_card).
+      
       * ssh into your server: ` ssh -i ~/.ssh/project_key.rsa ubuntu@Public IP address `
       
 
