@@ -1,6 +1,6 @@
 # Linux-Server
 
-My Bookshelf is my personal library of books I read with my own reflections and notes.
+website address: 35.180.99.148
 
 # Prerequisites
 
@@ -45,11 +45,35 @@ The site need to be opened at http://localhost:5000/
       
 8. Configure the local timezone to UTC:
       * configure time by running `sudo dpkg-reconfigure tzdata`
+      
+9. Install and configure Apache to serve a Python mod_wsgi application:
+      * install apache: `sudo apt-get install apache2`
+      * install Mod WSGI: `sudo apt-get install libapache2-mod-wsgi python-dev`
+      
+10. Install and configure PostgreSQL:
+      * install PostgreSQL: `sudo apt-get install postgresql`
+      * Create a new database user named catalog:
+           * log in to posgres user: `sudo su - postgres`
+           * at a catalog role - at the psql console run: `CREATE ROLE catalog WITH LOGIN PASSWORD 'catalog';`
+           * give catalog the ability to create databases: `ALTER ROLE catalog CREATEDB;`
+           * after creating the catalog user create the data base for the item-catalog project: `ALTER ROLE catalog CREATEDB;`
+      
+   
+   
+11. install git: `sudo apt-get install git`
+
+      
 
 
-# Built With
+# References
 
-* [Bootstrap](http://getbootstrap.com/).
-* [Vagrant](https://www.virtualbox.org/wiki/Downloads)
-* [Virtualbox](https://www.vagrantup.com/)
+* [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-create-a-sudo-user-on-ubuntu-quickstart)
+* [StackExchange](https://unix.stackexchange.com/questions/110522/timezone-setting-in-linux)
+* [Udacity Configure Linux Web Servers ](https://classroom.udacity.com/courses/ud299)
+* [computer hope ](https://www.computerhope.com/issues/ch000798.htm)
+* [Github repo](https://github.com/anumsh/Linux-Server-Configuration)
+* []()
+
+
+
 
