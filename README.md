@@ -23,7 +23,28 @@ The site need to be opened at http://localhost:5000/
       * `sudo apt-get upgrade`
 
 3.  Change the SSH port from 22 to 2200:
-      * 
+      * edit file `/etc/ssh/sshd_config` and change port 20 to 2200.
+      * restart ssh service after editting: `sudo service ssh restart`
+      
+4. Configure the Uncomplicated Firewall (UFW):
+      * deafult deny of all incoming requests: `sudo ufw default deny incoming`
+      * default allow of all outgoing traffic: `sudo ufw default allow outgoing`
+      * allow incoming connections for SSH (port 2200): `sudo ufw default allow 2200/tcp`
+      * allow incoming connections for HTTP (port 80):  `sudo ufw default allow 80/tcp`
+      * allow incoming connections for NTP (port 123):  `sudo ufw default allow 123/udp`
+      
+5. Create a new user account named grader:
+      * `sudo adduser grader`
+
+6. Give grader the permission to sudo:
+      * `usermod -aG sudo grader` or adding grader to the sudoers file by adding `grader  ALL=(ALL:ALL) ALL`
+      
+7. Create an SSH key pair for grader using the ssh-keygen tool:
+      * `ssh-keygen` to create a key on your local machine.
+      * save the content of the `.pub` file in `~/.ssh/authorized_keys` in the server machine.
+      
+8. Configure the local timezone to UTC:
+      * configure time by running `sudo dpkg-reconfigure tzdata`
 
 
 # Built With
