@@ -65,6 +65,15 @@ The site need to be opened at http://localhost:5000/
       
 
 
+# Essential system packages
+
+* [Python](https://www.python.org/)
+* [git](https://git-scm.com/)
+* [apache software ](https://httpd.apache.org/)
+* [PostgreSQL ](https://www.postgresql.org/)
+* [Mod WSGI](https://modwsgi.readthedocs.io/en/develop/)
+
+
 # References
 
 * [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-create-a-sudo-user-on-ubuntu-quickstart)
@@ -72,7 +81,6 @@ The site need to be opened at http://localhost:5000/
 * [Udacity Configure Linux Web Servers ](https://classroom.udacity.com/courses/ud299)
 * [computer hope ](https://www.computerhope.com/issues/ch000798.htm)
 * [Github repo](https://github.com/anumsh/Linux-Server-Configuration)
-* []()
 
 
 
